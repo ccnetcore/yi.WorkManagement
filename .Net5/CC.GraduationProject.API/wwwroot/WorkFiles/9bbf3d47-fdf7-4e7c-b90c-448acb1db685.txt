@@ -1,0 +1,1 @@
+sudo java -Xms512m -Xmx9000m -jar CatServer-1b57158-universal.jar nogui

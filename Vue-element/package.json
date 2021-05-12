@@ -1,0 +1,25 @@
+{
+  "name": "cc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^4.5.3",
+    "echarts": "^4.9.0",
+    "element-ui": "^2.14.1",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "qs": "^6.9.4",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "vue-template-compiler": "^2.6.11"
+  }
+}

@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="T4DbSession.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>T4DbSession.tt</DependentUpon>
+    </None>
+    <None Include="T4StaticDalFactory.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>T4StaticDalFactory.tt</DependentUpon>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CC.GraduationProject.EFDAL\CC.GraduationProject.EFDAL.csproj" />
+    <ProjectReference Include="..\CC.GraduationProject.IDAL\CC.GraduationProject.IDAL.csproj" />
+    <ProjectReference Include="..\CC.GraduationProject.Model\CC.GraduationProject.Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="T4DbSession.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>T4DbSession.cs</LastGenOutput>
+    </None>
+    <None Update="T4StaticDalFactory.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>T4StaticDalFactory.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="T4DbSession.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>T4DbSession.tt</DependentUpon>
+    </Compile>
+    <Compile Update="T4StaticDalFactory.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>T4StaticDalFactory.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>
